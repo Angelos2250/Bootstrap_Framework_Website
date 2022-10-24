@@ -1,0 +1,414 @@
+/* ------------------------------------
+common styles
+------------------------------------ */
+:root {
+   --main-color: rgba(28, 85, 104, 1);
+   --nav-color: rgba(121, 82, 179, 1);
+   --detail-color: rgba(76, 25, 27, 1);
+   --white: rgba(255, 255, 255, 1);
+   --grid-bg: rgba(22, 24, 68, 0.1);
+}
+
+body, header {
+   font-family: 'Rubik', sans-serif;
+}
+
+
+
+main {
+   background-color: rgb(255, 255, 255);
+}
+
+section,
+footer {
+   padding: 5%;
+}
+
+section {
+   padding-top: 70px;
+   padding-bottom: 100px;
+   background-color: rgb(255, 255, 255);
+}
+
+/* for back-to-top-button only */
+body {
+   background-color: rgb(36, 25, 53);
+}
+
+/* ------------------------------------
+navbar
+------------------------------------ */
+.navbar-brand strong {
+   color: rgb(0, 0, 0);
+   margin: auto 0px;
+   margin-left: 10px;
+}
+
+.navbar-brand i {
+   color: var(--main-color);
+}
+
+.brand-custom {
+   margin-left: 5%;
+}
+
+.navbar-light {
+   background-color: transparent;
+   height: 70px;
+}
+
+#burgerMenu {
+   background-color: rgba(10, 10, 10, 1);
+   border: rgba(10, 10, 10, 1) solid;
+   color: rgba(255, 255, 255, 1);
+   margin-right: 5%;
+}
+
+#burgerMenu:hover,
+#burgerMenu:active,
+#burgerMenu:hover {
+   background-color: rgba(255, 255, 255, 1);
+   border: rgba(10, 10, 10, 1) solid;
+   color: rgba(10, 10, 10, 1);
+}
+
+.burgerScroll {
+   background-color: rgba(255, 255, 255, 1) !important;
+   color: var(--nav-color) !important;
+   border: var(--nav-color) solid !important;
+}
+
+.burgerScroll:hover {
+   background-color: var(--nav-color) !important;
+   color: rgba(255, 255, 255, 1) !important;
+   border: rgba(255, 255, 255, 1) solid !important;
+}
+
+.scroll {
+   background-color: var(--nav-color);
+   transition: all .3s ease;
+}
+
+.hide {
+   background-color: rgba(0, 125, 94, 0);
+   transition: all .3s ease;
+}
+
+/* ------------------------------------
+sidebar
+------------------------------------ */
+.offcanvas {
+   background-color: rgba(230, 230, 230, 1);
+}
+
+.border-5 {
+   border-color: var(--nav-color) !important;
+}
+
+.offcanvas-header {
+   color: var(--nav-color);
+   border-bottom: var(--nav-color) solid;
+   border-width: 5px;
+   padding-bottom: 19px;
+}
+
+.offcanvas-title {
+   font-weight: 800;
+   margin: 0px auto;
+}
+
+.offcanvas-header .btn-close {
+   color: var(--nav-color);
+}
+
+.side-nav ul {
+   list-style-type: none;
+}
+
+.pic-grey {
+   filter: grayscale(100%)
+}
+
+.pic-grey:hover {
+   filter: grayscale(0%);
+}
+
+.offcanvas-body a {
+   color: var(--nav-color);
+   text-decoration: none;
+}
+
+.offcanvas-body a:hover {
+   color: var(--nav-color);
+   text-decoration: underline;
+}
+
+.main-nav div{
+   width: 100%;
+   border-radius: 12px;
+}
+
+.main-nav .btn:hover {
+   background-color: rgba(255, 255, 255, 1);
+   border: var(--nav-color) solid;
+   color: var(--nav-color);
+}
+
+.offcanvas {
+   width: 20%;
+   min-width: 200px;
+}
+
+.main-nav ul {
+   list-style-type: none;
+ }
+
+ .fa-sidebar {
+    font-size: 10vw;
+ }
+
+/* ------------------------------------
+carousel
+------------------------------------ */
+.carousel img {
+   max-height: 700px;
+   object-fit: cover;
+}
+
+.carousel-indicators {
+   background-color: var(--main-color);
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+   width: 4vw;
+   height: 4vw;
+   filter: invert(100);
+}
+
+header .container-fluid {
+   padding: 0px;
+}
+
+header h2 {
+   color: var(--main-color);
+   font-weight: 700;
+}
+
+header p {
+   color: var(--main-color);
+   font-size: 1.2rem;
+}
+
+header .btn-slide2 {
+   position: absolute;
+   right: 50px;
+   top: -450px;
+   background-color: var(--main-color);
+   padding: 15px 40px;
+   border: var(--main-color) solid;
+   text-decoration: none;
+   color: rgba(255, 255, 255, 1);
+   font-weight: bold;
+}
+
+header .btn-slide2:hover,
+header .btn-slide2:focus,
+header .btn-slide2:active {
+   background-color: rgba(255, 255, 255, 1);
+   border: var(--main-color) solid;
+   color: var(--main-color);
+   transition: background-color 0.25s ease-in;
+   font-weight: bold;
+}
+
+@media screen and (max-width: 800px) {
+   .caption2 {
+      background-color: rgba(255, 255, 255, 0.8);
+   }
+}
+
+/* ------------------------------------
+Bootstrap Intro
+------------------------------------ */
+.intro {
+   background-color: var(--white);
+}
+
+.introcol img {
+   width: 70%;
+   border: var(--nav-color) solid;
+   border-width: 2px;
+   border-radius: 5%;
+}
+
+.introcol .btn {
+   background-color: var(--nav-color);
+   border: var(--nav-color) solid;
+}
+
+.introcol .btn:hover {
+   background-color: rgba(255, 255, 255, 1);
+   border: var(--nav-color) solid;
+   color: var(--nav-color);
+}
+
+.block {
+   hyphens: auto;
+   text-align: justify
+}
+
+/* ------------------------------------
+grid-demo
+------------------------------------ */
+.grid-demo {
+   background-color: var(--grid-bg);
+}
+
+.grid-demo hr {
+   width: 30%;
+   border: var(--nav-color) solid;
+   border-width: 2px;
+   margin: 0px auto;
+}
+
+.grind-intro {
+   display: inline-block;
+}
+
+.grid-demo .blue {
+   background-color: var(--main-color);
+   color: rgba(255, 255, 255, 1);
+   padding: 10px;
+}
+
+.grid-demo .second-color {
+   background-color: var(--detail-color);
+   color: rgba(255, 255, 255, 1);
+   padding: 10px;
+}
+
+.grid-demo i {
+   color: var(--main-color);
+}
+
+.grid-demo .fa-info-circle {
+   color: rgba(255, 255, 255, 1);
+}
+
+.grid-demo .fa-info-circle:hover {
+   transform: scale(1.1);
+}
+
+/* ------------------------------------
+Why Use Bootstrap
+------------------------------------ */
+.bootstrap_pros {
+   text-align: center;
+}
+
+.bootstrap_pros hr {
+   width: 30%;
+   border: var(--nav-color) solid;
+   border-width: 2px;
+   margin: 0px auto;
+}
+
+.bootstrap_pros .procol {
+   border: var(--nav-color) solid;
+   border-width: 2px;
+   border-radius: 5%;
+   transition: transform 250ms;
+   box-shadow: 4.0px 8.0px 8.0px hsl(0deg 0% 0% / 0.38);
+}
+
+.procol:hover {
+   transform: translateY(-10px);
+}
+
+.bootstrap_pros p {
+   vertical-align: middle;
+   text-align: center;
+}
+
+/* ------------------------------------
+Contact
+------------------------------------ */
+#contact {
+	color: rgba(255,255,255, 1);
+	background-color: var(--main-color);
+}
+
+#contact .form-infos p {
+  margin-bottom: 100px;
+}
+
+#contact .form-group {
+  margin-bottom: 15px;
+}
+
+#contact input {
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#contact .form-check-input {
+  padding: 0px;
+}
+
+#contact textarea {
+  padding: 20px;
+  height: 280px;
+}
+
+#contact .btn {
+  background-color: rgba(255,255,255, 1);
+  color: rgba(10, 10, 10, 1);
+  border: rgba(255,255,255, 1) solid;
+}
+
+#contact .btn:hover {
+  background-color: var(--main-color);
+  color: rgba(255,255,255, 1);
+  border: rgba(255,255,255, 1) solid;
+}
+
+/* ------------------------------------
+Back-to-top-Button
+------------------------------------ */
+.top {
+   position: sticky;
+   bottom: 20px;
+   margin-right: 10px;
+   place-self: end;
+   margin-left: 5%;
+}
+
+.btn-secondary {
+   background-color: var(--nav-color);
+   color: rgba(255, 255, 255, 1);
+   border: var(--nav-color) solid;
+}
+
+.btn-secondary:hover,
+.btn-secondary:active,
+.btn-secondary:focus {
+   background-color: rgba(255, 255, 255, 1);
+   color: var(--nav-color);
+   border: var(--nav-color) solid;
+}
+
+/* ------------------------------------
+footer
+------------------------------------ */
+footer {
+   background-color: rgb(36, 25, 53);
+   color: #fff;
+   padding: 40px 0px 20px 0px;
+   display: block
+}
+
+footer .right {
+   align-items: flex-end;
+}
